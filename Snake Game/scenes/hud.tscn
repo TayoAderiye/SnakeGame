@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmbe535x70jde"]
+
+[sub_resource type="Theme" id="Theme_4kxan"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rcu0k"]
+bg_color = Color(0, 0.686275, 0.694118, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_m5gi4"]
+font_weight = 500
+
+[node name="Hud" type="CanvasLayer"]
+
+[node name="Scrollpanel" type="Panel" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 50.0
+grow_horizontal = 2
+theme = SubResource("Theme_4kxan")
+theme_override_styles/panel = SubResource("StyleBoxFlat_rcu0k")
+
+[node name="ScoreLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -30.0
+offset_top = -6.0
+offset_right = 100.0
+offset_bottom = 52.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_m5gi4")
+theme_override_font_sizes/font_size = 40
+text = "SCORE: 0"
+horizontal_alignment = 1
+vertical_alignment = 1

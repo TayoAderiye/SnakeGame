@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqjqswpqibobl"]
+
+[ext_resource type="Texture2D" uid="uid://k6175vmjrog4" path="res://icon.svg" id="1_lmh4d"]
+
+[node name="snake_segment" type="Sprite2D" groups=["segments"]]
+position = Vector2(51, 45)
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("1_lmh4d")
