@@ -10,3 +10,4 @@
 
 ## 5. Coding Standard and Convention: 1
 
+## TOTAL --> 7
